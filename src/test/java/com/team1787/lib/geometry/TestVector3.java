@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class Vector3Test {
+class TestVector3 {
 
     final Vector3 A = new Vector3(3, 4, 5);
     final Vector3 B = new Vector3( 123, 123, 123);

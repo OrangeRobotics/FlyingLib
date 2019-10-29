@@ -18,11 +18,19 @@
                     <target>7</target>
                 </configuration>
             </plugin>
+            <plugin>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.2</version>
+            </plugin>
+            <plugin>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <version>2.22.2</version>
+            </plugin>
         </plugins>
     </build>
 
     <properties>
-        <jupiterVersion>5.6.0-M1</jupiterVersion>
+        <jupiterVersion>5.5.2</jupiterVersion>
         <lombokVersion>1.18.10</lombokVersion>
         <phoenixVersion>5.14.1</phoenixVersion>
         <sparkVersion>1.4.1</sparkVersion>
@@ -32,6 +40,12 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
+            <version>${jupiterVersion}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
             <version>${jupiterVersion}</version>
             <scope>test</scope>
         </dependency>
