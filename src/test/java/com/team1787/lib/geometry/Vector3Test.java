@@ -13,7 +13,8 @@ class Vector3Test {
 
     @Test
     void magnitude() {
-
+        final Double magnitudeA = A.magnitude();
+        assertEquals(7.07106781187, magnitudeA);
     }
 
     @Test
@@ -26,6 +27,8 @@ class Vector3Test {
 
     @Test
     void dot() {
+        final Double dotA = A.dot(B);
+        assertEquals(1,476, dotA);
     }
 
     @Test

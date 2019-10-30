@@ -38,7 +38,7 @@ public class Vector3 implements Vector<Vector3> {
 
     @Override
     public double dot(Vector3 b) {
-        return this.x * b.y + this.y + b.y + this.z * b.z;
+        return this.x * b.x + this.y + b.y + this.z * b.z;
     }
 
     @Override
