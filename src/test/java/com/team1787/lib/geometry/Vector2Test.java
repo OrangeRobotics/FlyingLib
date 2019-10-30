@@ -8,6 +8,8 @@ class Vector2Test {
 
     @org.junit.jupiter.api.Test
     void magnitude() {
+        final Double magnitudeA = A.magnitude();
+        assertEquals(5, magnitudeA);
     }
 
     @org.junit.jupiter.api.Test
@@ -25,5 +27,7 @@ class Vector2Test {
 
     @org.junit.jupiter.api.Test
     void dot() {
+        final Double dotA = A.dot(A);
+        assertEquals(25, dotA);
     }
 }
