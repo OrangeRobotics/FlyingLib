@@ -21,6 +21,12 @@ public final class Vector3 implements IVector<Vector3> {
         this.z = z;
     }
 
+    public Vector3 crossProduct(Vector3 b) {
+        return new Vector3(this.y*b.z-this.z*b.y,this.z*b.x-this.x*b.z,this.x*b.y-this.y*b.x);
+        
+
+    }
+
     @Override
     public double magnitude() {
         return Math.sqrt(Math.pow(this.x, 2) + Math.pow(this.y, 2) + Math.pow(this.z, 2));
