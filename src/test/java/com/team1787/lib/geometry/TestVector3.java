@@ -21,11 +21,12 @@ class TestVector3 {
         final Vector3 scaledA = A.scale(2);
         final Vector3 scaledTargetA = new Vector3(6, 8, 10);
 
-//        assertEquals(scaledTargetA, scaledA);
+        assertEquals(scaledTargetA, scaledA);
     }
 
     @Test
     void dot() {
+
     }
 
     @Test
@@ -37,15 +38,4 @@ class TestVector3 {
         assertEquals(1, unitB.magnitude());
     }
 
-    @Test
-    void getX() {
-    }
-
-    @Test
-    void getY() {
-    }
-
-    @Test
-    void getZ() {
-    }
 }

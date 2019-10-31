@@ -4,6 +4,7 @@ import com.revrobotics.SparkMax;
 
 public final class Spark extends MotorController<SparkMax> {
 
+
     private final SparkMax spark;
 
     public Spark(SparkMax spark) {
