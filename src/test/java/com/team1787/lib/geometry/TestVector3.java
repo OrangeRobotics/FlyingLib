@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class Vector3Test {
+class TestVector3 {
 
     final Vector3 A = new Vector3(3, 4, 5);
     final Vector3 B = new Vector3( 123, 123, 123);
@@ -21,11 +21,12 @@ class Vector3Test {
         final Vector3 scaledA = A.scale(2);
         final Vector3 scaledTargetA = new Vector3(6, 8, 10);
 
-//        assertEquals(scaledTargetA, scaledA);
+        assertEquals(scaledTargetA, scaledA);
     }
 
     @Test
     void dot() {
+
     }
 
     @Test
@@ -37,15 +38,4 @@ class Vector3Test {
         assertEquals(1, unitB.magnitude());
     }
 
-    @Test
-    void getX() {
-    }
-
-    @Test
-    void getY() {
-    }
-
-    @Test
-    void getZ() {
-    }
 }

@@ -7,7 +7,7 @@ import java.util.Objects;
 /**
  * A two-dimensional vector
  */
-public class Vector2 implements Vector<Vector2> {
+public final class Vector2 implements IVector<Vector2> {
 
     public static final Vector2 ZERO = new Vector2(0, 0);
     public static final Vector2 ONE = new Vector2(1, 1);
