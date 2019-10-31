@@ -6,4 +6,5 @@ public interface IVector<V extends IVector> {
     V scale(double scalar);
     V add(V b);
     V unitVector();
+
 }
